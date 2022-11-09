@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { GifGrid } from "./components/gifGrid";
-import { Input } from "./components/input";
+import { GifGrid, Input } from "./components";
 
 export const GifExpertApp = () => {
 
