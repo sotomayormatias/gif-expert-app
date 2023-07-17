@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useState } from "react"
 
 export const Input = ({ onSearch }) => {
@@ -16,7 +17,7 @@ export const Input = ({ onSearch }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} aria-label="form">
             <input
                 type='text'
                 placeholder='Buscar'
@@ -25,4 +26,8 @@ export const Input = ({ onSearch }) => {
             />
         </form>
     );
+}
+
+Input.propTypes = {
+    onSearch: PropTypes.func.isRequired,
 }
